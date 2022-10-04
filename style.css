@@ -1,0 +1,195 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Caveat', cursive;
+    color:  #961556;
+}
+header {
+    height:60px;
+}
+header h1 {
+    display: inline-block;
+    float: left;
+    padding:14px 23px;
+    text-transform: uppercase;
+}
+header h1 a{
+    transition: .4s;
+}
+header h1 a:hover{
+    color:  #C70039;
+}
+header ul {
+    float:right;
+}
+header ul li {
+    padding:23px;
+    display:inline-block;
+}
+header ul li a{
+    transition: .4s;
+}
+header ul li a:hover {
+    color: #C70039; 
+}
+
+body{
+	background:  #ffe7ef;
+}
+
+
+img{
+    width: 10cm;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px blue;
+    padding: 3px;
+    margin: 50px
+    transition: 0.3s;
+    opacity: 75%;
+  }
+
+  img:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    box-shadow: 1px 1px 6px #fff;
+  }
+
+* {
+    text-decoration: none;
+}
+.container {
+    width:90%;
+    margin:0 auto;
+}
+.container:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.mobile-menu {
+    float: right;
+    display: none;
+    padding:15px;
+}
+.mobile-menu:hover {
+    cursor:pointer;
+}
+
+#check {
+    display:none;
+}
+.sidebar {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:-300px;
+    width:300px;
+    background-color: rgba(225, 92, 130);
+    transition: .3s;
+}
+.sidebar ul li a{
+    color:#fff;
+}
+.sidebar ul li {
+    padding:22px;
+    transition:.3s;
+    transition-property: background-color;
+}
+.sidebar ul li:hover {
+    background-color: #C70039;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+.banner {
+    background-color: #ffd3e8;
+    background-image: url("geometric.jpg") ;
+    padding: 96px 0;
+}
+
+
+section {
+    padding:47px 0;
+}
+.banner img {
+    width: 100px;
+    border-radius: 9px;
+    box-shadow: 0 2px 5px  #ad004f;
+    margin-bottom: 10px;
+    
+    
+}
+.banner h2,
+.banner p {
+    color:   #aa2e53;
+}
+.banner h2 {
+    margin-bottom: 10px;
+}
+.banner p {
+    font-size: 17px;
+}
+.banner-left {
+    padding-left: 24px;
+}
+section h3 {
+	padding-bottom: 22px;
+	text-align: center;
+	margin:19px;
+	position: relative;
+}
+
+section h3: before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:110px;
+	height:3px;
+	left: calc(50% - 50px);
+}
+section h3:after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #C70039;
+	left: calc(50% - 20px);
+}
+
+#about p {
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 20px;
+	margin-bottom: 14px;
+}
+
+section h4 {
+    padding-bottom: 22px;
+    text-align: center;
+    margin:19px;
+    position: relative;
+
+}
+
+#Portfolio {
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 20px;
+    margin-bottom: 14px;
+
+
+#contact {
+    background-color:  #edc7ff;
+}
+
+@media (max-width:768px){
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
